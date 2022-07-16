@@ -373,6 +373,33 @@ declare interface DictTypeEntity {
 	[key: string]: any;
 }
 
+declare interface MovieCategoryEntity {
+	/**
+	 * ID
+	 */
+	id?: number;
+	/**
+	 * 分类名称
+	 */
+	categoryName?: string;
+	/**
+	 * 分类图标
+	 */
+	categoryIcon?: string;
+	/**
+	 * 创建时间
+	 */
+	createTime?: Date;
+	/**
+	 * 更新时间
+	 */
+	updateTime?: Date;
+	/**
+	 * 任意键值
+	 */
+	[key: string]: any;
+}
+
 declare interface SpaceInfoEntity {
 	/**
 	 * ID

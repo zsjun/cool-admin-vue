@@ -641,6 +641,50 @@ declare interface DictType {
 	};
 }
 
+declare interface MovieCategory {
+	/**
+	 * 删除
+	 * @returns Promise<any>
+	 */
+	delete(data?: any): Promise<any>;
+	/**
+	 * 修改
+	 * @returns Promise<any>
+	 */
+	update(data?: any): Promise<any>;
+	/**
+	 * 单个信息
+	 * @returns Promise<any>
+	 */
+	info(data?: any): Promise<any>;
+	/**
+	 * 列表查询
+	 * @returns Promise<any>
+	 */
+	list(data?: any): Promise<any>;
+	/**
+	 * 分页查询
+	 * @returns Promise<PageResponse>
+	 */
+	page(data?: any): Promise<PageResponse>;
+	/**
+	 * 新增
+	 * @returns Promise<any>
+	 */
+	add(data?: any): Promise<any>;
+	/**
+	 * 权限
+	 */
+	permission: {
+		delete: string;
+		update: string;
+		info: string;
+		list: string;
+		page: string;
+		add: string;
+	};
+}
+
 declare interface SpaceInfo {
 	/**
 	 * 删除
@@ -945,6 +989,7 @@ declare type Service = {
 	};
 	demo: { goods: DemoGoods };
 	dict: { info: DictInfo; type: DictType };
+	movie: { category: MovieCategory };
 	space: { info: SpaceInfo; type: SpaceType };
 	task: { info: TaskInfo };
 	chat: { message: ChatMessage; session: ChatSession };
