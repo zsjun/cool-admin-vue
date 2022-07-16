@@ -329,6 +329,10 @@ declare interface DictInfoEntity {
 	 */
 	remark?: string;
 	/**
+	 * 父ID
+	 */
+	parentId?: number;
+	/**
 	 * 创建时间
 	 */
 	createTime?: Date;
