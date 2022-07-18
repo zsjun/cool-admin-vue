@@ -27,7 +27,7 @@ export default (): UserConfig => {
 			Unocss({
 				presets: [presetUno()]
 			}),
-			svgBuilder(["./src/icons/svg/",...findSvgFolders("./src/modules/")]),
+			svgBuilder(["./src/icons/svg/", ...findSvgFolders("./src/modules/")]),
 			cool()
 		],
 		css: {
