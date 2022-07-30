@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "vite --host",
 		"build": "vite build",
-		"serve": "vite preview",
+		"serve": "vite preview --port 8099",
 		"lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
 		"lint:eslint": "eslint \"{src,mock}/**/*.{vue,ts,tsx}\" --fix"
 	},
