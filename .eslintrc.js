@@ -36,6 +36,13 @@ module.exports = {
 		"@typescript-eslint/ban-types": "off",
 		"@typescript-eslint/no-non-null-assertion": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"vue/valid-attribute-name": "off",
+		"vue/first-attribute-linebreak": "off",
+		"vue/no-child-content": "off",
+		"vue/no-expose-after-await": "off",
+		"vue/no-reserved-props": "off",
+		"vue/no-v-text-v-html-on-component": "off",
+		"vue/prefer-import-from-vue": "off",
 		"@typescript-eslint/no-unused-vars": [
 			"error",
 			{
